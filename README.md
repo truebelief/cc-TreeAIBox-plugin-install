@@ -1,4 +1,4 @@
-# <img src="./img/logo.png" width="30" alt="GitHub Logo"> cc-TreeAIBox-plugin
+# <img src="https://github.com/user-attachments/assets/be44a28a-50e0-427d-95c2-05c8e31dfad4" width="30" alt="GitHub Logo"> cc-TreeAIBox-plugin
 
 AI-Enhanced Toolset for 3D Tree Processing: A CloudCompare Plugin (alpha 0.1)
 
