@@ -2,9 +2,11 @@
 
 AI-Enhanced Toolset for 3D Tree Processing: A CloudCompare Plugin (alpha 0.1)
 
-This is a Python Plugin for CloudCompare. You can register the python file `TreeAIBox.py` as the main program. This is just a fresh prototype with bugs and imperfections. I will release a stable version after enough tests. The code format also needs standardization.
+This is a Python Plugin for CloudCompare with hatch setup. The main program is the python file `TreeAIBox.py`.
 
-**Note:** Tested only in Windows OS, RTX3090 (VRAM: 24GB) With CUDA; I am currently making the TreeAIBox installable akin to the 3DFin plugin, thanks to Romain Janvier's suggestion!
+**Note:** Tested only in Windows OS, RTX3090 (VRAM: 24GB) With CUDA
+
+This is just a fresh prototype with bugs and imperfections. I will release a stable version after enough tests. The code format also needs standardization.
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/dcf4e7de-adea-493f-9fff-04e082efa2d1" width="30%" alt="20240822_TreeAIBoxQSM">
@@ -12,18 +14,19 @@ This is a Python Plugin for CloudCompare. You can register the python file `Tree
 
 ## Requirements
 
-There are several Python library dependencies:
+There is only one required Python library dependency. You can either use the Python package manager of the CloudCompare, or navigate to the default python interpreter of the CloudCompare and run the pip install commands via CLI.
 
 ```bash
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
-pip install scikit-image==0.22.0 timm numpy_groupies numpy_indexed scikit-learn
 ```
 
-Make sure the scikit-image version is correct. You can either use the Python package manager of the CloudCompare, or navigate to the default python interpreter of the CloudCompare and run the pip install commands via CLI.
+Other libraries are included during the installation setup. If they are missing, please use the Python package manager of the CloudCompare, or navigate to the default python interpreter of the CloudCompare to install those libraries:
+```bash
+pip install scikit-image==0.22.0 timm numpy_groupies numpy_indexed scikit-learn
+```
+Make sure the scikit-image version is correct.
 
 > **Important:** If you have installed CloudCompare to Program Files, there might be issues with pip being prohibited from installing to the default site-package folder. Please run pip command or launch the CloudCompare as the administrator.
-
-I avoid using excessive dependencies unless speed optimization is essential. Simplicity is an art.
 
 ## Basic Modules (Updated Aug 22, 2024)
 
